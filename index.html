@@ -1,0 +1,54 @@
+<!--
+  Universidad Técnica de Manabí · Tecnologías de la Información
+  Estudiante: Borys Alexy Panezo Guerrero · Sexto semestre
+  Asignatura: Desarrollo de Aplicaciones Web · Unidad 1
+  Docente: Manuel Geovanny Bravo Pico
+  Actividad 3: Desarrollo de calculadora web · Trabajo individual
+  Nota: esta laptop no incorpora cámara por las características
+  de su modelo. La demostración se realiza grabando el escritorio.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora | Borys Panezo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-labelledby="title">
+    <p class="eyebrow">UTM · DESARROLLO DE APLICACIONES WEB</p>
+    <h1 id="title">Calculadora</h1>
+    <p class="intro">Cuatro operaciones, paso a paso.</p>
+    <section class="screen" aria-label="Resultado">
+      <p id="history">Lista para calcular</p>
+      <output id="display" aria-live="polite">0</output>
+    </section>
+    <div class="keys" aria-label="Teclado de la calculadora">
+      <button data-key="clear" class="utility">AC</button>
+      <button data-key="back" aria-label="Borrar último dígito">⌫</button>
+      <button data-key="sign" aria-label="Cambiar signo">±</button>
+      <button data-key="/" class="operator" aria-label="Dividir">÷</button>
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="*" class="operator" aria-label="Multiplicar">×</button>
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="-" class="operator" aria-label="Restar">−</button>
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="+" class="operator" aria-label="Sumar">+</button>
+      <button data-key="0" class="zero">0</button>
+      <button data-key="." aria-label="Separador decimal">.</button>
+      <button data-key="=" class="equals" aria-label="Calcular">=</button>
+    </div>
+    <p class="help">Teclado: números y + − * / · Enter: resultado<br>
+      Esc: limpiar · Retroceso: borrar · Máximo 14 dígitos.</p>
+    <footer>Borys Alexy Panezo Guerrero<br>Actividad 3 · Unidad 1</footer>
+  </main>
+</body>
+</html>
